@@ -1,0 +1,70 @@
+[
+  {
+    "key": "mode",
+    "type": "segment",
+    "options": [
+      "edit",
+      "keep_only"
+    ],
+    "section": "mode",
+    "help": "edit starts from the received message and applies the operations. keep_only starts from an empty object: only the fields that set and copy write are output, copy reading the received message."
+  },
+  {
+    "key": "apply_to",
+    "type": "segment",
+    "options": [
+      "message",
+      "each_item"
+    ],
+    "section": "mode",
+    "help": "message edits the whole message. each_item edits every element of a JSON array, in order, and outputs the edited array; paths are then relative to each element."
+  },
+  {
+    "key": "array_path",
+    "type": "text",
+    "section": "mode",
+    "array_only": true,
+    "placeholder": "data.orders",
+    "help": "Where the array is in the message, with the path syntax of operations. Leave empty when the message itself is the array."
+  },
+  {
+    "key": "max_items",
+    "type": "integer",
+    "section": "mode",
+    "array_only": true,
+    "min": 1,
+    "max": 10000,
+    "help": "Largest array accepted, from 1 to 10000. A longer array fails the activation; it is never truncated."
+  },
+  {
+    "key": "on_missing",
+    "type": "select",
+    "options": [
+      "skip",
+      "fail"
+    ],
+    "section": "operations",
+    "help": "When the source of copy, rename or remove, or a template reference, does not resolve: skip leaves that operation out (a trace says so); fail stops the activation."
+  },
+  {
+    "key": "parse_json",
+    "type": "select",
+    "options": [
+      "auto",
+      "always",
+      "never"
+    ],
+    "section": "advanced",
+    "help": "auto parses text that is valid JSON and keeps other text as a JSON string; always requires JSON; never keeps the received text as a JSON string (message only)."
+  },
+  {
+    "key": "on_error",
+    "type": "select",
+    "options": [
+      "fail",
+      "route"
+    ],
+    "section": "advanced",
+    "help": "fail stops the activation without publishing anything; route publishes a JSON error document on error instead, and nothing on out. A partial result is never published."
+  }
+]

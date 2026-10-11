@@ -1,0 +1,6 @@
+[data-block-release="edit_fields@0.1.0"] [data-edit-fields-node-card] { width: 100%; min-width: 0; }
+[data-block-release="edit_fields@0.1.0"] [data-edit-fields-node-card] h3 { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+[data-block-release="edit_fields@0.1.0"] [data-edit-fields-node-card] .node-data-preview { overflow-wrap: anywhere; }
+[data-block-release="edit_fields@0.1.0"] [data-edit-fields-node-card] :is(.ef-card-first, .ef-card-path) { font-family: ui-monospace, monospace; }
+[data-block-release="edit_fields@0.1.0"] [data-edit-fields-node-card] .ef-card-mode { font-weight: 600; }
+[data-block-release="edit_fields@0.1.0"] [data-edit-fields-node-card] .ef-card-invalid { color: var(--danger, #b42318); }

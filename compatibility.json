@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "kind": "edit_fields",
+  "block_version": "0.1.0",
+  "maintained_by": "HackInvent",
+  "source": {
+    "algorithm": "block-source-v1",
+    "sha256": "a2f4b80747c9dddd6676f0556f1ecc325bc5a403dd6a3d9babf9aeb52d9b4889"
+  },
+  "bloxsmith_compatibility": [
+    "1.0.9"
+  ],
+  "tested_with_bloxsmith": "1.0.9",
+  "validations": [
+    {
+      "bloxsmith_version": "1.0.9",
+      "framework_commit": "f1a87f6369d2acfb8be41d23ea849384cd461c86",
+      "framework_source_sha256": "66e36a13fd9a23a0a0576ec81552d6e479671db6db9b8692cc7486c5aac4f3b8",
+      "tested_at": "2026-10-11T10:44:15.031939+00:00",
+      "status": "passed",
+      "installation_mode": "bundled",
+      "suite_paths": [
+        "tests/F5.01_edit_fields.py",
+        "tests/F5.02_edit_fields_runtime.py",
+        "tests/F8.01_edit_fields_ui.py"
+      ],
+      "suite_count": 3,
+      "report_sha256": "b67dfc7d8979eb8877d18580bc39cfec953933ccefb6ebb120b4e19ba1c148b8"
+    }
+  ]
+}
